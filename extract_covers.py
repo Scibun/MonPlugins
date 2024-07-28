@@ -14,8 +14,3 @@ def extract_first_page_to_png(pdf_path, output_path):
     
     document.load_page(0).get_pixmap().save(output_path)
     return f"{output_path}"
-
-if __name__ == "__main__":
-    pdf_path = sys.argv[1]
-    output_path = sys.argv[2]
-    extract_first_page_to_png(pdf_path, output_path)
